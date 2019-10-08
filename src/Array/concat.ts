@@ -22,7 +22,9 @@ function concat(array: any[], ...overload: any): any[] {
 // _.concat(array, [values])
 
 var array = [1, 11];
-var other = concat(array, 2, [3, 3, "a"], [[4]], undefined, null);
+var other = concat(array, 2, [3, 3, "a"], [[4]], undefined, null, {
+  0: [1, 2, 3]
+});
 
 // console.log(other);
 // => [1, 2, 3, [4]]
